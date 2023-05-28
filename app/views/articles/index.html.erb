@@ -1,0 +1,10 @@
+<div class="container mt-4">
+    <div class="row justify-content-start">
+        <% for article in @articles%>
+        <article class="col-12 mb-4">
+            <h2><%= link_to article.title, article_path(article) %></h2>
+            <p><%= article.content %>
+        </article>
+        <% end %>
+    </div>
+</div>

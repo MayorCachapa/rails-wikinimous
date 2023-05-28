@@ -1,0 +1,9 @@
+<h1>EDIT ARTICLE</h1>
+
+<h2><%= @article.title %></h2>
+<%= form_with model: @article do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    <%= f.text_field :content %>
+    <%= f.submit %>
+<% end%>
